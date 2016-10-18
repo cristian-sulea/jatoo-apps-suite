@@ -37,4 +37,23 @@
   </scm>
 
 
+  <dependencies>
+    <dependency>
+      <artifactId>jatoo-telegram</artifactId>
+      <groupId>${project.groupId}</groupId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>jatoo-weather</artifactId>
+      <groupId>${project.groupId}</groupId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>jatoo-weather-openweathermap</artifactId>
+      <groupId>${project.groupId}</groupId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+
+
 </project>
