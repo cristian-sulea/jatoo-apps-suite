@@ -57,11 +57,11 @@ public class JaTooTelegramBotWeatherCommand extends BotCommand {
     JaTooWeather weather = weatherService.getWeather("683506");
 
     StringBuilder text = new StringBuilder();
-    text.append("<strong>").append(weather.city).append("</strong>").append(" (").append(weatherService.getDescription(weather)).append(")");
-    text.append("\n").append(weatherService.getTemperatureWithText(weather));
-    text.append("\n").append(weatherService.getWindWithText(weather));
-    text.append("\n").append(weatherService.getCloudsWithText(weather));
-    text.append("\n").append(weatherService.getHumidityWithText(weather));
+    text.append("<strong>").append(weather.getCity()).append("</strong>").append(" (").append(weather.getDescriptionText()).append(")");
+    text.append("\n").append(weather.getTemperatureTextFull());
+    text.append("\n").append(weather.getWindTextFull());
+    text.append("\n").append(weather.getCloudsTextFull());
+    text.append("\n").append(weather.getHumidityTextFull());
     // text.append("\n").append(weatherService.getPressureWithText(weather));
     // text.append("\n").append(weatherService.getWindDirectionWithText(weather));
     // text.append("\n").append(weatherService.getRainWithText(weather));
